@@ -1,0 +1,8 @@
+pipeline {
+	agent any
+    stage('Docker Build') {
+      steps {
+      	sh 'docker build -t firstimage .'
+      }
+    }
+}
