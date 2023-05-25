@@ -12,7 +12,7 @@ stages
 		stage('second')
 		{
 			steps{
-				sh 'docker --version'
+				cmd 'docker --version'
 			}
 		}
 	}
