@@ -1,10 +1,10 @@
 pipeline {
-	agent any
-	stages{
-    stage('Docker Build') {
-      steps {
-      	echo "docker build -t firstimage ."
-      }
+    agent { docker { image 'python:3.10.7-alpine' } }
+    stages {
+        stage('build') {
+            steps {
+                sh 'python --version'
+            }
+        }
     }
-}
 }
