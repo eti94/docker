@@ -1,2 +1,1 @@
-cd c:
-docker --version
+echo "hello"
