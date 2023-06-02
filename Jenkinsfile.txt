@@ -12,7 +12,10 @@ stages
 		stage('second')
 		{
 			steps{
+				echo "2nd stage"
 				sh 'docker --version'
+				echo "3rd stage"
+				
 			}
 		}
 	}
