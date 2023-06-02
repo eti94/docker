@@ -13,7 +13,7 @@ stages
 		{
 			steps{
 				echo "2nd stage"
-				docker --version
+				'docker --version'
 				echo "3rd stage"
 				
 			}
